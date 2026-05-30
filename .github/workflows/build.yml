@@ -9,7 +9,8 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - run: npm run build  # Build your web assets first
+      - run: npm run build  # Build web assets first
+      - run: npx cap init "Word Hunt" "com.vaibhav.wordhunt" --web-dir=.
       - run: npx cap add android
       - run: npx cap sync
       - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
