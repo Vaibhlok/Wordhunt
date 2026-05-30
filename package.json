@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@capacitor/android": "^6.1.2",
-    "@capacitor/core": "^6.1.2",
-    "@admob-plus/capacitor": "^3.2.0"
+    "@capacitor/android": "latest",
+    "@capacitor/core": "latest",
+    "@admob-plus/capacitor": "latest"
   },
   "devDependencies": {
-    "@capacitor/cli": "^6.1.2"
+    "@capacitor/cli": "latest"
   }
 }
