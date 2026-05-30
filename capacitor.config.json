@@ -1,6 +1,9 @@
 {
   "appId": "com.vaibhav.wordhunt",
   "appName": "Word Hunt",
-  "webDir": "dist",
-  "bundledWebRuntime": false
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "http://localhost:8100"
+  }
 }
