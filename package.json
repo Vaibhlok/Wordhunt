@@ -11,6 +11,6 @@
     "@capacitor/cli": "^6.1.2"
   },
   "scripts": {
-    "build": "echo 'No build needed - using single index.html' && mkdir -p dist && cp index.html dist/index.html"
+    "build": "mkdir -p dist && cp index.html dist/index.html"
   }
 }
