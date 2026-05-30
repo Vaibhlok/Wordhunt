@@ -5,7 +5,7 @@
   "dependencies": {
     "@capacitor/android": "^6.1.2",
     "@capacitor/core": "^6.1.2",
-    "@admob-plus/capacitor": "^2.0.0"
+    "@admob-plus/capacitor": "^3.2.0"
   },
   "devDependencies": {
     "@capacitor/cli": "^6.1.2"
