@@ -1,5 +1,6 @@
 {
   "appId": "com.vaibhav.wordhunt",
   "appName": "Word Hunt",
-  "webDir": "."
+  "webDir": "dist",
+  "bundledWebRuntime": false
 }
