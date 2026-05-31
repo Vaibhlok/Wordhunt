@@ -1,5 +1,18 @@
-{
-  "appId": "com.vaibhav.wordhunt",
-  "appName": "Word Hunt",
-  "webDir": "."
-}
+import { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'com.vaibhav.wordhunt',
+  appName: 'Word Hunt',
+  webDir: 'dist',
+  backgroundColor: '#1a3c2c',
+  hideStatusBar: true,
+  orientation: 'portrait',
+
+  plugins: {
+    SplashScreen: {
+      launchShowDuration: 1200,
+    }
+  }
+};
+
+export default config;
