@@ -1,6 +1,13 @@
 {
   "appId": "com.vaibhav.wordhunt",
   "appName": "Word Hunt",
-  "webDir": "dist",
-  "bundledWebRuntime": false
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "AdMob": {
+      "appId": "ca-app-pub-7628763162561238\~1234567890",
+      "requestTrackingAuthorization": true,
+      "initializeOnStart": true
+    }
+  }
 }
