@@ -1,47 +1,19 @@
 name: Build APK
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Use Node.js 22
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Prepare web assets
-        run: npm run build
-
-      - name: Initialize Capacitor
-        run: npx cap init "Word Hunt" "com.vaibhav.wordhunt" --web-dir www
-
-      - name: Add Android platform
-        run: npx cap add android
-
-      - name: Sync Capacitor
-        run: npx cap sync android
-
-      - name: Build Debug APK
-        run: |
-          cd android
-          chmod +x ./gradlew
-          ./gradlew assembleDebug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - run: npm install
+      - run: npx cap init "Word Hunt" "com.vaibhav.wordhunt" --web-dir=.
+      - run: npx cap add android
+      - run: npx cap sync
+      - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
+      - uses: actions/upload-artifact@v4
         with:
           name: wordhunt-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
