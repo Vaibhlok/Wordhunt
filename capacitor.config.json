@@ -1,15 +1,13 @@
 {
-  "name": "wordhunt",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "echo 'Web assets ready' && mkdir -p www && cp -f index.html www/index.html",
-    "sync": "npx cap sync android",
-    "android": "npx cap open android"
-  },
-  "devDependencies": {
-    "@capacitor/android": "^6.1.0",
-    "@capacitor/cli": "^6.1.0",
-    "@capacitor/core": "^6.1.0",
-    "@capacitor-community/admob": "^5.0.0"
+  "appId": "com.vaibhav.wordhunt",
+  "appName": "Word Hunt",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "AdMob": {
+      "appId": "ca-app-pub-7628763162561238\~1234567890",
+      "requestTrackingAuthorization": true,
+      "initializeOnStart": true
+    }
   }
 }
