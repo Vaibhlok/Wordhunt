@@ -1,18 +1,15 @@
 {
   "name": "word-hunt",
   "version": "1.0.0",
-  "description": "Word Hunt - Swipe & Find",
   "scripts": {
-    "sync": "npx cap sync",
-    "copy": "npx cap copy",
-    "android": "npx cap open android",
-    "ios": "npx cap open ios"
+    "build": "echo 'Web assets ready' && mkdir -p www && cp index.html www/",
+    "sync": "npx cap sync android",
+    "android": "npx cap open android"
   },
   "devDependencies": {
     "@capacitor/android": "^6.1.0",
     "@capacitor/cli": "^6.1.0",
     "@capacitor/core": "^6.1.0",
-    "@capacitor/ios": "^6.1.0",
     "@capacitor-community/admob": "^5.0.0"
   }
 }
