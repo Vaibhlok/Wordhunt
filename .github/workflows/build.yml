@@ -22,9 +22,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Setup Capacitor
-        run: |
-          npx cap init "Word Hunt" "com.vaibhav.wordhunt" --web-dir www
+      - name: Prepare web assets
+        run: npm run build
+
+      - name: Initialize Capacitor
+        run: npx cap init "Word Hunt" "com.vaibhav.wordhunt" --web-dir www
 
       - name: Add Android platform
         run: npx cap add android
