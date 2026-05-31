@@ -1,15 +1,18 @@
 {
-  "name": "wordhunt",
+  "name": "word-hunt",
   "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "@capacitor/android": "^6.1.2",
-    "@capacitor/core": "^6.1.2"
+  "description": "Word Hunt - Swipe & Find",
+  "scripts": {
+    "sync": "npx cap sync",
+    "copy": "npx cap copy",
+    "android": "npx cap open android",
+    "ios": "npx cap open ios"
   },
   "devDependencies": {
-    "@capacitor/cli": "^6.1.2"
-  },
-  "scripts": {
-    "build": "mkdir -p dist && cp index.html dist/index.html"
+    "@capacitor/android": "^6.1.0",
+    "@capacitor/cli": "^6.1.0",
+    "@capacitor/core": "^6.1.0",
+    "@capacitor/ios": "^6.1.0",
+    "@capacitor-community/admob": "^5.0.0"
   }
 }
