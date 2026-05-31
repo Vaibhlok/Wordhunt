@@ -5,7 +5,7 @@
   "bundledWebRuntime": false,
   "plugins": {
     "AdMob": {
-      "appId": "ca-app-pub-7628763162561238\~1234567890",
+      "appId": "ca-app-pub-7628763162561238\~2229189030",
       "requestTrackingAuthorization": true,
       "initializeOnStart": true
     }
